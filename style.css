@@ -711,3 +711,95 @@ img {
         grid-template-columns: 1.5fr 1fr;
     }
 }
+
+/* ==================== SOCIAL MEDIA ICONS ==================== */
+.social-icons-wrapper {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Specific selector to override .contact-card i */
+.contact-card .social-link i {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover i {
+    color: var(--white);
+}
+
+/* Brand Colors */
+.social-link.tiktok:hover {
+    background-color: #000000;
+}
+
+.social-link.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-link.facebook:hover {
+    background-color: #1877F2;
+}
+
+.social-link.youtube:hover {
+    background-color: #FF0000;
+}
+
+/* ==================== SOCIAL MEDIA SECTION ==================== */
+.socials-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.socials-content p {
+    margin-bottom: 2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.social-link.tiktok-large,
+.social-link.instagram-large,
+.social-link.facebook-large,
+.social-link.youtube-large {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.social-link.tiktok-large:hover {
+    background-color: #000000;
+}
+
+.social-link.instagram-large:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-link.facebook-large:hover {
+    background-color: #1877F2;
+}
+
+.social-link.youtube-large:hover {
+    background-color: #FF0000;
+}
