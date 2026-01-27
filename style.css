@@ -275,6 +275,58 @@ img {
     width: 100%;
 }
 
+.hero-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-download-brosur {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-alt));
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 8px 20px rgba(37, 150, 190, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.btn-download-brosur i {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-download-brosur:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(37, 150, 190, 0.4);
+}
+
+.btn-download-brosur:hover i {
+    transform: translateY(2px);
+    animation: bounce 0.6s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+}
+
 /* ==================== ABOUT & VISION ==================== */
 .about-subtitle {
     text-transform: uppercase;
